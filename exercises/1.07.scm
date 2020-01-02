@@ -3,8 +3,6 @@
 
 (define elipsis 0.00000000000001)
 
-(define (square x) (* x x))
-
 (define (average x y) (/ (+ x y) 2))
 
 ;improved good-enough
