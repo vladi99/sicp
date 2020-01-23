@@ -19,4 +19,5 @@
 
 (count-change 11)
 
-;Order of growth 0(n^5)
+;Order of growth for number of steps 0(n^5)
+;Order of growth for space 0(n)
