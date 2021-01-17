@@ -12,17 +12,11 @@
         (iter (next a) (combiner result (term a)))))
   (iter a null-value))
 
-(define (sum term a next b)
-  (accumulate + 0 term a next b))
-
-(define (product term a next b)
-  (accumulate * 1 term a next b))
-
 (define (sum-integers a b)
-  (sum identity a inc b))
+  (accumulate + 0 identity a inc b))
 
 (define (factorial n)
-  (product identity 1 inc n))
+  (accumulate * 1 identity 1 inc n))
 
 (sum-integers 1 10)
 (factorial 5)
